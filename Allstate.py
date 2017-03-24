@@ -1,10 +1,14 @@
+#Program to run the follwing machine learning models:
+#	1.Random forest regression
+#	2. Linear regression
+#	3. Gradient Boosting regression
+import pandas as pd;
+import numpy as np
 from sklearn import cross_validation
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.linear_model import LinearRegression
-import pandas as pd;
-import numpy as np
 
 #read the data in
 data = pd.read_csv("train.csv")
